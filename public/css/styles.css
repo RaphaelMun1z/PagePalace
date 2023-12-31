@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+:root {
+  --verde-claro: #87CEEB;
+  --verde-piscina: #86EBE7;
+  --roxo-suave: #86AEEB;
+  --verde-suave: #86EBC5;
+  --roxo: #868EEB;
+  --branco-puro: #fff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  display: flex;
+  width: auto;
+  height: 100px;
+  background-color: var(--roxo-suave);
+  border-radius: 50px;
+  margin: 2em 15em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 3em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+header>.container-logo {
+  position: relative;
+  display: flex;
+  width: 50px;
+  height: fit-content;
+}
+
+header>nav {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+header>nav>ul {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+}
+
+header>nav>ul>li {
+  text-decoration: none;
+  color: var(--branco-puro);
+  font-size: 15pt;
+}
+
+section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: fit-content;
+}
+
+section.landing {
+  height: calc(100vh - 100px - 6em);
+}
+
+section.landing>.container-inside-landing {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border: 2px solid;
+  border-radius: 50px;
+  margin: 1em 15em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+section.mostSellBoks {
+  min-height: 60vh;
+  height: fit-content;
+}
+
+section.mostSellBoks>.container-inside-mostSellBoks {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  margin: 1em 15em;
+  gap: 20px;
+  padding: 2em 0;
+}
+
+section.mostSellBoks>.container-inside-mostSellBoks>.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 300px;
+  flex: 0 0 calc(25% - 20px);
+  background-color: #fff;
+  border: 2px solid;
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 3em;
+}
+
+section.mostSellBoks>.container-inside-mostSellBoks>.card>h2 {
+  color: #272424;
+  font-size: 25pt;
+}
+
+section.mostSellBoks>.container-inside-mostSellBoks>.card>p {
+  color: #272424;
+  font-size: 20pt;
+}
+
+section.registerBookForm {
+  height: fit-content;
+}
+
+section.registerBookForm>.container-inside-registerBookForm {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  margin: 1em 15em;
+  gap: 20px;
+  padding: 2em 0;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 5em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+section.registerBookForm>.container-inside-registerBookForm>h1 {
+  color: #272424;
+  font-size: 40pt;
+  margin-bottom: 10px;
+}
+
+section.registerBookForm>.container-inside-registerBookForm>form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 40px;
+}
+
+section.registerBookForm>.container-inside-registerBookForm>form>.form-control {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: fit-content;
+  min-width: 50%;
+  height: fit-content;
+  gap: 10px;
+}
+
+section.registerBookForm>.container-inside-registerBookForm>form>.form-control>label {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  color: #272424;
+  font-size: 25pt;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+section.registerBookForm>.container-inside-registerBookForm>form>.form-control>input {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  font-size: 20pt;
+  background: transparent;
+  border: none;
+  border: 1px solid #272424;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+section.registerBookForm>.container-inside-registerBookForm>form>input[type=submit] {
+  border: none;
+  background-color: var(--verde-suave);
+  width: fit-content;
+  height: fit-content;
+  padding: 1em 2em;
+  border-radius: 50px;
+  font-size: 14pt;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  width: auto;
+  height: 300px;
+  background-color: var(--roxo-suave);
+  border-radius: 50px;
+  margin: 2em 15em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 3em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
