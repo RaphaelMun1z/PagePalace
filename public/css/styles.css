@@ -32,7 +32,7 @@ header {
   display: flex;
   width: auto;
   height: 100px;
-  background-color: var(--roxo-suave);
+  background-color: var(--verde-suave);
   border-radius: 50px;
   margin: 2em 15em;
   justify-content: space-between;
@@ -44,8 +44,32 @@ header {
 header>.container-logo {
   position: relative;
   display: flex;
-  width: 50px;
-  height: fit-content;
+  width: fit-content;
+  height: 100%;
+}
+
+header>.container-logo>a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+header>.container-logo>a>img {
+  object-fit: contain;
+  height: 70%;
+  width: 140px;
+}
+
+header>.container-logo>a>p {
+  height: 30%;
+  font-size: 14pt;
+  color: #373434;
+  font-weight: 700;
 }
 
 header>nav {
@@ -66,8 +90,9 @@ header>nav>ul {
 
 header>nav>ul>li {
   text-decoration: none;
-  color: var(--branco-puro);
+  color: #373434;
   font-size: 15pt;
+  font-weight: 700;
 }
 
 section {
@@ -124,6 +149,48 @@ section.mostSellBoks>.container-inside-mostSellBoks>.card {
   border-radius: 50px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   padding: 3em;
+  gap: 10px;
+}
+
+section.mostSellBoks>.container-inside-mostSellBoks>.book-single-view {
+  flex: 0 0 calc(100%);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  background-color: var(--verde-suave);
+  width: fit-content;
+  min-width: 200px;
+  text-align: center;
+  height: fit-content;
+  font-size: 14pt;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 15px 20px;
+}
+
+.button.edit {
+  background-color: transparent;
+  border-color: #E9BA3A;
+  color: #E9BA3A !important;
+}
+
+.button.remove {
+  background-color: transparent;
+  border-color: #c70000 ;
+  color: #c70000 ;
+  font-weight: 700;
+  font-size: 20pt;
+}
+
+section.mostSellBoks>.container-inside-mostSellBoks>.card>p>a {
+  font-weight: 700;
+  padding: 15px 20px;
+  border-radius: 50px;
 }
 
 section.mostSellBoks>.container-inside-mostSellBoks>.card>h2 {
@@ -227,7 +294,7 @@ footer {
   display: flex;
   width: auto;
   height: 300px;
-  background-color: var(--roxo-suave);
+  background-color: var(--verde-suave);
   border-radius: 50px;
   margin: 2em 15em;
   justify-content: space-between;

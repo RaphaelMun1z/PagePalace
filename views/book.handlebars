@@ -1,0 +1,14 @@
+<section class="mostSellBoks">
+    <div class="container-inside-mostSellBoks">
+        <div class="card book-single-view">
+            <h2>{{book.title}}</h2>
+            <p>{{book.pageqty}} páginas</p>
+            <p>#{{book.id}}</p>
+            <p class="button"><a href="/books">Voltar</a></p>
+            <p class="button edit"><a href="/books/edit/{{book.id}}">Editar</a></p>
+            <form action="/books/remove/{{book.id}}" method="POST">
+                <input class="button remove" type="submit" value="Remover">
+            </form>
+        </div>
+    </div>
+</section>
